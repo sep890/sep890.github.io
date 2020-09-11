@@ -68,6 +68,13 @@ origin https://github.com/your-username/your-username.github.io.git (push)
    * you may have a duplicate repository now
    * delete the one with no lab files in it
 
+#### Last Steps: Making Sure You Can Push From GH Desktop
+Back in the VSCode terminal in your repository, type `git pull origin master --allow-unrelated-histories`
+* Ideally, this should integrate your remote repository's history with your local repo, allowing you to use Github Desktop in future.
+* If this does _not_ work, good news: you have a remote copy of the lab in the right place.
+* You can delete all local copies of everything and re-clone your remote from your Github Pages Repo
+* If you have to delete everything and re-clone, please `git remote add classfiles https://github.com/aleitch1/INST377-FA2020.git` so you can pull updates from the class repository.
+
 ##### How To Update Your Own Remote From The Main Lab Files
 You will need to pull from the class repository periodically as we go through the semester, though hopefully not for the first few weeks.
 To do this, in VSCode:
