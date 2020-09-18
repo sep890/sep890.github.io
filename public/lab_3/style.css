@@ -14,7 +14,7 @@ body {
   width: 70%;
   min-width: 800px;
   margin: 0 auto;
-  background-color: #6091C3;
+  background-color: rgb(125, 180, 236, 0.5);
 }
 
 /* || typography */
@@ -60,12 +60,11 @@ p, li {
 }
 
 #body > * {
-  background-color: lightblue;
   padding: 1%;
 }
 
 .main, .header, nav, .article, .aside, .footer, section {
-  background-color: lightblue;
+  background-color: rgb(68, 191, 231, 0.5);
   padding: 1%;
 }
 
