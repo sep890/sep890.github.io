@@ -1,3 +1,8 @@
+/*
+Paragraph Font Style: font-family: 'Open Sans', sans-serif;
+Header Font Style: font-family: 'Proza Libre', sans-serif;
+*/
+
 body {
   background-color: #FFEA57;
   padding:0px;
@@ -17,9 +22,21 @@ body {
   flex-wrap:wrap;
 }
 
+.header h1 {
+  font-family: 'Proza Libre', sans-serif
+}
+
 .content {
 width:100%;
 max-width:960px;
+}
+
+.body2 h2 {
+  font-family: 'Proza Libre', sans-serif;
+}
+
+.body2 p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper {
@@ -41,7 +58,7 @@ max-width:960px;
 padding:20px;
 flex:0 1 auto !important;
 height:100%;
-width:30%;
+max-width:30%;
 
 }
 
@@ -55,14 +72,11 @@ width:30%;
 }
 
 .body2 {
-background-color: #f2f2f2;
-
-flex-grow: 1 ;
-flex-shrink:0 ;
-
-
-
-padding:20px;
+  background-color: #f2f2f2;
+  margin-right:15px;
+  flex: 1;
+  width:70%;
+  padding:20px;
 }
 
 .testudo-image {
