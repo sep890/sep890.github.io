@@ -1,9 +1,9 @@
 body {
-    background-color: #FFDD96;
+    background-color: #FFEA57;
 }
 
 .header {
-    background-color: #467FDB;
+    background-color: #2404DB;
     width:100%;
     margin-bottom:15px;
     display:-webkit-flex;
@@ -14,19 +14,20 @@ body {
     color:white;
     align-items:center;
     padding:20px;
+    box-sizing: border-box;
 }
 
 .content {
   width:100%;
   max-width:960px;
-
 }
 
 .wrapper {
     width:100%;
 }
 .body {
-   width:960px;
+   max-width:960px;
+   width:100%;
    margin-left:auto;
    margin-right:auto;
    display:-webkit-flex;
@@ -35,20 +36,55 @@ body {
    flex-wrap:wrap;
    -webkit-justify-content:space-between;
    justify-content:space-between;
+}
+
+.body1 {
   
+  padding:20px;
+  flex:1 !important;
+
 
 }
 
-
-.body1 {
-  background-color:blue;
-  margin-left:15px;
-  padding:20px;
-  flex: 1 1 0;
+.body1 p {
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color:#f2f2f2;
 }
 
 .body2 {
-  background-color:purple;
-  flex: 1 1 3;
+  background-color: #f2f2f2;
+  margin-left:15px;
+  flex: 2 !important;
+  padding:20px;
 }
 
+.testudo-image {
+    border: 1px solid rgba(0,0,0,0.5);
+    max-width:100%;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+  .body {
+     display:block;
+  }
+
+  .body1 {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+
+  }
+
+  .body1 img {
+    flex:1 !important;
+    max-width:100% !important;
+  }
+
+  .body1 p {
+    flex:2 !important;
+  }
+}
