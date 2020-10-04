@@ -126,7 +126,9 @@ margin-right:15px;
 }
 
 .body1 p {
-  flex:2 !important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .ul-list column {
