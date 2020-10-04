@@ -98,17 +98,31 @@ margin-right:15px;
   justify-content:space-between;
   flex: 1 0 auto !important;
   margin-right:0px;
+  max-width:100%;
+  width:100%;
+  box-sizing:border-box;
+  padding:0px;
+  margin-bottom:30px;
+  
 
 }
 
 .container {
   justify-content:center !important;
-  
+  flex-flow: row wrap;
+  padding:25px;
+  box-sizing:border-box;
 }
 
 .body1 img {
   flex:1 !important;
-  max-width:50% !important;
+  width:50% !important;
+  max-width:195px;
+}
+
+.body2 {
+  width:100%;
+  margin-right:0px;
 }
 
 .body1 p {
