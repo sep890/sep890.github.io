@@ -56,10 +56,10 @@ max-width:960px;
 .body1 {
 
 padding:20px;
-flex:1 0 auto !important;
+flex:0 1 auto !important;
 height:100%;
 max-width:30%;
-margin-right:0px;
+margin-right:15px;
 }
 
 .body1 p {
@@ -82,7 +82,8 @@ margin-right:0px;
 
 .testudo-image {
   border: 1px solid rgba(0,0,0,0.5);
-  max-width:50%;
+  width:100%;
+  max-width:195px;
   border-radius: 4px;
 }
 
@@ -95,7 +96,14 @@ margin-right:0px;
   display:flex;
   flex-wrap:wrap;
   justify-content:space-between;
+  flex: 1 0 auto !important;
+  margin-right:0px;
 
+}
+
+.container {
+  justify-content:center !important;
+  
 }
 
 .body1 img {
