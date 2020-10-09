@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <title>Sarah Patrick's Lab 4</title>
+    <link href="styles.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Sarah Patrick's Lab 4</h1>
+    </div>
+
+
+
+    <div class="container">
+        <form action="/api" method="post">
+          <ul class="flex-outer">
+            <li>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" maxlength="140">
+            </li>
+            <li>
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" maxlength="140">
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </li>
+            <li>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </li>
+            <li>
+              <label for="message">Text Field</label>
+              <textarea name="message" rows="5" cols="33" id="message" placeholder="This is some default message text."></textarea>
+            </li>
+            <li>
+              <p>Age</p>
+              <ul class="flex-inner">
+                <li>
+                  <input type="checkbox" id="eighteen-to-thirtyfive" name="eighteen-to-thirtyfive">
+                  <label for="eighteen-to-thirtyfive">18-35</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="thirtfive-to-fifty" name="thirtfive-to-fifty">
+                  <label for="thirtfive-to-fifty">35-50</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="fifty-to-sixtyfive" name="fifty-to-sixtyfive">
+                  <label for="fifty-to-sixtyfive">50-65</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button type="submit" name="button" id="submit">Submit form</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+  </body> 
+</html>
