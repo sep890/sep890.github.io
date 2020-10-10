@@ -68,7 +68,7 @@
           </ul>
         </form>
       </div>
-        <script>
+      <script>
         function testFunction(color) {
         fetch('/api')
         .then((response) => response.text())
@@ -79,13 +79,14 @@
         document.querySelector('h1').textContent = "Lab 5 for Sarah Patrick";
         document.querySelector('title').textContent = "Sarah Patrick's Lab 5";
         document.querySelector('.checkbox-list-label').textContent = "Fruits";
+        document.querySelector('.flex-outer').style.margin = "0 auto";
         document.querySelectorAll("input[type='checkbox']").forEach(replaceAge);
         
     }
     var fruits = ['orange', 'lemon', 'raspberry'];
     function replaceAge(item, index, arr) {
-      arr[index].text = fruits[index];
+      arr[index].labels[0].innerText = fruits[index];
     }
-        </script>
+      </script>
   </body> 
 </html>
