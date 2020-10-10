@@ -3,6 +3,9 @@ body {
     color: #fff;
     padding: 50px 0;
   }
+  .checkbox-list-label {
+    margin: 0px;
+  }
   
   .container {
     width: 80%;
@@ -14,77 +17,56 @@ body {
     box-sizing: border-box;
   }
   
-  .flex-outer,
-  .flex-inner {
-    list-style-type: none;
-    padding: 0;
-  }
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 125px;
+  max-width: 225px;
+  padding: 8px;
+}
+ 
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 225px;
+}
+
+.flex-outer button {
+  margin-left: 0px;
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border-radius: 3px;
+}
+
+.flex-inner li {
+  width: 95px;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;
+}
+
+.flex-outer {
+  margin: 0 auto;
   
-  .flex-outer {
-    max-width: 800px;
-    margin-left: 0px;
-    padding: 0px 16px;
-  }
+  max-width:800px;
+  padding: 0 16px;
   
-  .flex-outer li,
-  .flex-inner {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
   
-  .flex-inner {
-    padding: 0 8px;
-    justify-content: space-between;  
-  }
   
-  .flex-outer > li:not(:last-child) {
-    margin-bottom: 20px;
-  }
-  
-  .flex-outer li label,
-  .flex-outer li p {
-    padding: 8px;
-    font-weight: 300;
-    letter-spacing: .09em;
-    text-transform: uppercase;
-  }
-  
-  .flex-outer > li > label,
-  .flex-outer li p {
-    flex: 1 0 125px;
-    max-width: 225px;
-  }
-  
-  .flex-outer > li > label + *,
-  .flex-inner {
-    flex: 1 0 225px;
-  }
-  
-  .flex-outer li p {
-    margin: 0;
-  }
-  
-  .flex-outer li input:not([type='checkbox']),
-  .flex-outer li textarea {
-    padding: 15px;
-    border: none;
-  }
-  
-  .flex-outer li button {
-    margin-left: 0px;
-    padding: 6px 12px;
-    background: #333;
-    color: #f2f2f2;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    border-radius: 3px;
-  }
-  
-  .flex-inner li {
-    width: 80px;
-  }
+}
 
   .header {
       text-align: center;
   }
+
+  
