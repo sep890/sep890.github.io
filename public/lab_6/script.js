@@ -15,7 +15,11 @@ function sortFunction(a, b, key) {
     return 1;
   }
   return 0;
-}
+  // math.random, range(), .map()
+  // .sort() reverse
+  // inject ordered list element with "flex-innter"
+  // document.createElement('.flex-inner').prepend = "";
+  // inject checkbox and lobel for each item
 
 document.body.addEventListener('submit', async (e) => {
   e.preventDefault(); // this stops whatever the browser wanted to do itself.
