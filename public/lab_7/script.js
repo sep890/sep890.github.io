@@ -32,7 +32,7 @@ function convertRestaurantsToCategories(restaurantList) {
     //$('body').append(div);
     const arrayofitems = range(900);
     const randomRestaurantsArray = arrayofitems.map((item) => {
-      const which = getRandomIntInclusive(0, restaurantList.length);
+      const which = getRandomIntInclusive(0, restaurantList.length-1);
       const restaurant = restaurantList[which]; // we are not worrying about uniqueness here
       return restaurant;
       console.table(randomRestaurantsArray); // This shows the shape of our data as it arrives
