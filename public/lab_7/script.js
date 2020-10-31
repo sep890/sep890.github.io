@@ -25,7 +25,7 @@ window.addEventListener('load', (event) => {
 
   }
 
-async function convertRestaurantsToCategories(restaurantList) {
+function convertRestaurantsToCategories(restaurantList) {
   // process your restaurants here!  
     //const div = document.createElement('div');
     //div.innerHTML = `<h2>What we have</h2> <br />${JSON.stringify(randomRestaurantsArray[0])}<br /><br />`;
